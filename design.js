@@ -1,5 +1,13 @@
 'use strict';
-nailDesignsImg = [];
+
+var imgContainer = document.getElementById('image-container');
+var newImg = [];
+var nailDesignsImg = [];
+var previousImages = [];
+var npicture = document.getElementById('npicture');
+
+var picture;
+
 
 
 new NailDesigns('beigenblack', 'nails.jpg/beigenblack.jpg');
@@ -22,15 +30,31 @@ new NailDesigns('tiffanyblue', ' nails.jpg/tiffanyblue.jpg');
 new NailDesigns(' whiteandblack', ' nails.jpg/whiteandblack.jpg');
 new NailDesigns(' whitetri', ' nails.jpg/whitetri.jpg');
 
-function nailDesigns(imgName, path) {
-  this.imgName = ImgName;
+function NailDesigns(name, path) {
+  this.name = name;
   this.path = path;
   nailDesignsImg.push(this);
 };
+
+function turnArrayIntoImages(product, img) {
+  var att = document.createAttribute('src');
+  att.value = NailDesigns.path;
+  img.setAttributeNode(att);
+}
+
 
 function render() {
   var imgRandom = function() {
     picture = Math.floor(Math.random() * nailDesignsImg.length);
     newImg = [];
-  newImg.push(picture);
+    newImg.push(npicture);
   };
+  imgRandom();
+
+  while (newImg[0] === previousImages[0]) {
+    imgRandom();
+  }
+  turnArrayIntoImages(nailDesignsImg[picture], npicture);
+
+}
+render();
