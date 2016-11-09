@@ -1,6 +1,11 @@
 'use strict';
-var nailDesignsImg = [];
+
+var imgContainer = document.getElementById('image-container');
 var newImg = [];
+var nailDesignsImg = [];
+var previousImages = [];
+var npicture = document.getElementById('npicture');
+
 var picture;
 
 
@@ -49,6 +54,7 @@ function render() {
   while (newImg[0] === previousImages[0]) {
     imgRandom();
   }
-  turnArrayIntoImages(nailDesignsImg[picture], picture);
+  turnArrayIntoImages(nailDesignsImg[picture], npicture);
 
 }
+render();
