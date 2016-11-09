@@ -1,11 +1,89 @@
-#npicute{
-  width: 50%;
-  height:50%;
-  background-color: orange;
+
+
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: lightblue;
+    }
+#homenav{
+  padding-left: 20%;
+    padding-right: 20%;
 }
+    #homenav ul {
+
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+padding-left: 120%;
+
+}
+
+  #homenav li {
+    float: left;
+list-style: none;
+
+/*margin-left: 20%;*/
+}
+
+   #homenav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: blue;
+}
+
+
+    }
+
+}
+
+
 #image-container{
-  width: 50%;
-  height:50%;
-  background-color: orange;
+  width: 50px;
+  height:50px;
+
 }
+
+
+img {
+  width: 250px;
+  height: 250px;
+  margin-left: 60px;
+
+    border-radius: 50px;}
+
+
+
+/*
+#homenav{
+  padding-left: 70%;
 }
+    #homenav ul {
+
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+padding-left: 120%;
+
+}
+
+  #homenav li {
+    float: left;
+list-style: none;
+/*margin-left: 20%;*/
+}
+
+   #homenav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: blue;
+}*/
+
+/* Change the link color to #111 (black) on hover */
+  /*#homenav li a:hover {
+    background-color: #111;
+}*/

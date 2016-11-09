@@ -36,10 +36,10 @@ function NailDesigns(name, path) {
   nailDesignsImg.push(this);
 };
 
-function turnArrayIntoImages(product, img) {
+function turnArrayIntoImages(NailDesigns, nails) {
   var att = document.createAttribute('src');
   att.value = NailDesigns.path;
-  img.setAttributeNode(att);
+  nails.setAttributeNode(att);
 }
 
 
@@ -48,6 +48,7 @@ function render() {
     picture = Math.floor(Math.random() * nailDesignsImg.length);
     newImg = [];
     newImg.push(npicture);
+    console.log(picture);
   };
   imgRandom();
 
