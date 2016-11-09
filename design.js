@@ -1,5 +1,8 @@
 'use strict';
-nailDesignsImg = [];
+var nailDesignsImg = [];
+var newImg = [];
+var picture;
+
 
 
 new NailDesigns('beigenblack', 'nails.jpg/beigenblack.jpg');
@@ -22,7 +25,7 @@ new NailDesigns('tiffanyblue', ' nails.jpg/tiffanyblue.jpg');
 new NailDesigns(' whiteandblack', ' nails.jpg/whiteandblack.jpg');
 new NailDesigns(' whitetri', ' nails.jpg/whitetri.jpg');
 
-function nailDesigns(imgName, path) {
+function NailDesigns(imgName, path) {
   this.imgName = ImgName;
   this.path = path;
   nailDesignsImg.push(this);
@@ -34,3 +37,4 @@ function render() {
     newImg = [];
   newImg.push(picture);
   };
+  imgRandom();
