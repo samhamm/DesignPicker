@@ -2,11 +2,6 @@
 nailDesignsImg = [];
 
 
-function nailDesigns(imgName, path) {
-  this.imgName = ImgName;
-  this.path = path;
-}
-
 new NailDesigns('beigenblack', 'nails.jpg/beigenblack.jpg');
 new NailDesigns('blackandwhite', 'nails.jpg/blackandwhite.jpg ');
 new NailDesigns('blackswirlnail,s', 'nails.jpg/blackswirl.jpg');
@@ -26,3 +21,16 @@ new NailDesigns('sparkle', ' nails.jpg/sparkle.jpg');
 new NailDesigns('tiffanyblue', ' nails.jpg/tiffanyblue.jpg');
 new NailDesigns(' whiteandblack', ' nails.jpg/whiteandblack.jpg');
 new NailDesigns(' whitetri', ' nails.jpg/whitetri.jpg');
+
+function nailDesigns(imgName, path) {
+  this.imgName = ImgName;
+  this.path = path;
+  nailDesignsImg.push(this);
+};
+
+function render() {
+  var imgRandom = function() {
+    picture = Math.floor(Math.random() * nailDesignsImg.length);
+    newImg = [];
+  newImg.push(picture);
+  };
