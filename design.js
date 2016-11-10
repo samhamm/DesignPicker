@@ -48,7 +48,6 @@ function render() {
     picture = Math.floor(Math.random() * nailDesignsImg.length);
     newImg = [];
     newImg.push(npicture);
-    console.log(picture);
   };
   imgRandom();
 
@@ -59,3 +58,12 @@ function render() {
 
 }
 render();
+
+function myFunction() {
+    var x = document.getElementById('myTopnav');
+    if (x.className === 'topnav') {
+        x.className += ' responsive';
+    } else {
+        x.className = 'topnav';
+    }
+}
