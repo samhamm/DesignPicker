@@ -36,10 +36,10 @@ function NailDesigns(name, path) {
   nailDesignsImg.push(this);
 };
 
-function turnArrayIntoImages(product, img) {
+function turnArrayIntoImages(NailDesigns, nails) {
   var att = document.createAttribute('src');
   att.value = NailDesigns.path;
-  img.setAttributeNode(att);
+  nails.setAttributeNode(att);
 }
 
 
@@ -58,3 +58,12 @@ function render() {
 
 }
 render();
+
+function myFunction() {
+    var x = document.getElementById('myTopnav');
+    if (x.className === 'topnav') {
+        x.className += ' responsive';
+    } else {
+        x.className = 'topnav';
+    }
+}
